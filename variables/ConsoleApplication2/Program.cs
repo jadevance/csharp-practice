@@ -37,6 +37,7 @@ namespace ConsoleApplication2
 
             // floats
             // negatives. decimals, whole numbers
+            // strings throw exceptions
 
             float number3, number4;
             Console.WriteLine("Please enter any number:");
