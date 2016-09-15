@@ -7,3 +7,8 @@ c:\users\jade\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleA
 C:\Users\Jade\Documents\Visual Studio 2015\Projects\csharp_practice\hello_world\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
 C:\Users\Jade\Documents\Visual Studio 2015\Projects\csharp_practice\hello_world\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\Jade\Documents\Visual Studio 2015\Projects\csharp_practice\hello_world\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Jade\Documents\Visual Studio 2015\Projects\csharp_practice\hello_world\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Jade\Documents\Visual Studio 2015\Projects\csharp_practice\hello_world\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Jade\Documents\Visual Studio 2015\Projects\csharp_practice\hello_world\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.CodeAnalysisLog.xml
+C:\Users\Jade\Documents\Visual Studio 2015\Projects\csharp_practice\hello_world\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.lastcodeanalysissucceeded
+C:\Users\Jade\Documents\Visual Studio 2015\Projects\csharp_practice\hello_world\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
