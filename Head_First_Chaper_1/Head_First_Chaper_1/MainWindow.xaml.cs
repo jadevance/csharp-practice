@@ -65,7 +65,16 @@ namespace Head_First_Chaper_1
             AnimateEnemy(enemy, 0, playArea.ActualWidth - 100, "(Canvas.left)");
             AnimateEnemy(enemy, random.Next((int)playArea.ActualHeight - 100), random.Next((int)playArea.ActualHeight - 100), "(Canvas.Top)");
             playArea.Children.Add(enemy);
+            enemy.MouseEnter += Enemy_MouseEnter;
         
+        }
+
+        private void Enemy_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            if (humanCaptured)
+            {
+                EndTheGame();
+            }
         }
 
         private void AnimateEnemy(ContentControl enemy, double from, double to, string propertyToAnimate)
