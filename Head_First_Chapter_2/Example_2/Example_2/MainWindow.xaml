@@ -20,7 +20,7 @@
         <Button x:Name="button2" Content="Another Conditional Test" HorizontalAlignment="Left" Margin="95,45,0,0" Grid.Row="1" VerticalAlignment="Top" Width="144" Click="button2_Click"/>
         <Button x:Name="button3" Content="If/Else" Grid.Column="1" HorizontalAlignment="Left" Margin="91,52,0,0" VerticalAlignment="Top" Width="75" Click="button3_Click"/>
         <Button x:Name="button4" Content="A Loop" Grid.Column="1" HorizontalAlignment="Left" Margin="91,45,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="button4_Click"/>
-        <TextBlock x:Name="myLabel" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Left" Margin="95,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="353"/>
+        <TextBlock x:Name="myLabel" HorizontalAlignment="Left" Margin="95,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="353" Height="55"/>
 
     </Grid>
 </Window>
