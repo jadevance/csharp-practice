@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Head_First_Chapter_2.Properties
+namespace Example_3.Properties
 {
 
 

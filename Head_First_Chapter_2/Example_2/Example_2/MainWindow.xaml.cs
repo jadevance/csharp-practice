@@ -47,7 +47,6 @@ namespace Example_2
             {
                 myLabel.Text = "x isn't 10";
             }
-
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -74,7 +73,6 @@ namespace Example_2
             {
                 count -= 1;
             }
-
             myLabel.Text = "The answer is " + count;
         }
     }
