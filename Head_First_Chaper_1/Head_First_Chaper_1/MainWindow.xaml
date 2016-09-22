@@ -13,7 +13,7 @@
             </Grid>
         </ControlTemplate>
     </Window.Resources>
-    <Grid Background="Black">
+    <Grid x:Name="grid" Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="140"/>
             <ColumnDefinition/>
@@ -26,7 +26,7 @@
         </Grid.RowDefinitions>
         <Button x:Name="startButton" Content="Start!" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" UseLayoutRounding="False" Click="startButton_Click"/>
         <ProgressBar Grid.Column="1" Grid.Row="2" Height="20"/>
-        <Canvas x:Name="playArea" Grid.Row="1" Grid.ColumnSpan="3">
+        <Canvas x:Name="playArea" Grid.Row="1" Grid.ColumnSpan="3" MouseMove="playArea_MouseMove" MouseLeave="playArea_MouseLeave">
             <Canvas.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF3B80E4" Offset="0"/>
@@ -39,12 +39,12 @@
                     <ContentControl Content="ContentControl" HorizontalAlignment="Left" VerticalAlignment="Top" Height="13" Width="95" Template="{DynamicResource EnemyTemplate}"/>
                 </StackPanel>
             </StackPanel>
-            <StackPanel x:Name="human" Orientation="Vertical">
+            <StackPanel x:Name="human" Orientation="Vertical" MouseDown="human_MouseDown">
                 <Ellipse Fill="#FFEEF728" Height="10" Width="10" Stroke="Black"/>
                 <Rectangle Fill="#FFEA728" Height="25" Width="25" Stroke="Black"/>
             </StackPanel>
             <TextBlock x:Name="gameOverText" Canvas.Left="211" TextWrapping="Wrap" Text="Game Over" Canvas.Top="320" FontFamily="Arial" FontSize="100" FontWeight="Bold" FontStyle="Italic" Foreground="White"/>
-            <Rectangle x:Name="target" Height="50" Canvas.Left="485" Stroke="Black" Canvas.Top="450" Width="50" RenderTransformOrigin="0.5,0.5">
+            <Rectangle x:Name="target" Height="50" Canvas.Left="485" Stroke="Black" Canvas.Top="450" Width="50" RenderTransformOrigin="0.5,0.5" MouseEnter="target_MouseEnter">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
