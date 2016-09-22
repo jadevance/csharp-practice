@@ -29,8 +29,7 @@ namespace Head_First_Chaper_1
 
         private void TargetTimer_Tick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
-            progressBar.ValueChangedEvent += 1;
+            progressBar.Value += 1;
             if (progressBar.Value >= progressBar.Maximum)
                 EndTheGame();
         }
@@ -113,20 +112,6 @@ namespace Head_First_Chaper_1
             }
         }
 
-        private void target_MouseEnter(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            if (targetTimer.IsEnabled && humanCaptured)
-            {
-                progressBar.ValueChangedEvent = 0;
-                Canvas.SetLeft(target, random.Next(100, (int)playArea.ActualWidth - 100));
-                Canvas.SetTop(target, random.Next(100, (int)playArea.ActualHeight - 100));
-                Canvas.SetLeft(human, random.Next(100, (int)playArea.ActualWidth - 100));
-                Canvas.SetTop(human, random.Next(100, (int)playArea.ActualHeight - 100));
-                humanCaptured = false;
-                human.IsHitTestVisible = true; 
-            }
-        }
-
         private void playArea_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
         {
             if (humanCaptured)
@@ -151,6 +136,20 @@ namespace Head_First_Chaper_1
             if(humanCaptured)
             {
                 EndTheGame();
+            }
+        }
+
+        private void target_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            if (targetTimer.IsEnabled && humanCaptured)
+            {
+                progressBar.Value = 0;
+                Canvas.SetLeft(target, random.Next(100, (int)playArea.ActualWidth - 100));
+                Canvas.SetTop(target, random.Next(100, (int)playArea.ActualHeight - 100));
+                Canvas.SetLeft(human, random.Next(100, (int)playArea.ActualWidth - 100));
+                Canvas.SetTop(human, random.Next(100, (int)playArea.ActualHeight - 100));
+                humanCaptured = false;
+                human.IsHitTestVisible = true;
             }
         }
     }
