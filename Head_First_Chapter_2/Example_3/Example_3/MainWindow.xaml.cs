@@ -15,14 +15,30 @@ using System.Windows.Shapes;
 
 namespace Example_3
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void checkBox_Checked(object sender, RoutedEventArgs e)
+        {
+            labelToChange.Text = "Text changing is disabled";
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (enableCheckBox.IsChecked == false)
+            {
+                labelToChange.Text = "Cha-Cha-Cha-Chaaangesss";
+            }
+            else
+            {
+                labelToChange.Text = "Text changing is disabled";
+            }
+        }
     }
 }
+

@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <CheckBox x:Name="enableCheckBox" Content="Enable label changing" Grid.Column="1" HorizontalAlignment="Left" Margin="54,78,0,0" VerticalAlignment="Top" Checked="checkBox_Checked"/>
+        <Button x:Name="changeText" Content="Change the label if checked" HorizontalAlignment="Left" Margin="47,73,0,0" VerticalAlignment="Top" Width="162" Click="button_Click"/>
+        <TextBlock x:Name="labelToChange" HorizontalAlignment="Left" Margin="89,58,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="71" Width="294"/>
+
     </Grid>
 </Window>
